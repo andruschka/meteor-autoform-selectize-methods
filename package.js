@@ -2,7 +2,7 @@ Package.describe({
   name: 'andruschka:autoform-selectize-methods',
   version: '0.1.0',
   // Brief, one-line summary of the package.
-  summary: 'A Meteor-Methods based Selectize for Autoform',
+  summary: 'A Meteor-Methods based Selectize plugin for Autoform',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/andruschka/meteor-autoform-selectize-methods.git',
   // By default, Meteor will default to using README.md for documentation.
