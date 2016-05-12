@@ -1,0 +1,9 @@
+<template name="afSelectizeMethods">
+  <select data-schema-key="{{instance.dsKey}}" class="search-select" placeholder="{{instance.placeholder}}">
+    {{#if instance.initialOption.get}}
+      <option value="{{instance.initialOption.get.value}}" selected="">
+        {{instance.initialOption.get.label}}
+      </option>
+    {{/if}}
+  </select>
+</template>
