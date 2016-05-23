@@ -62,7 +62,7 @@ Template.afSelectizeMethods.onRendered(function() {
   }
 })
 
-Template.afSelectize.onDestroyed(function (){
+Template.afSelectizeMethods.onDestroyed(function (){
   this.$('select')[0].selectize.destroy()
 })
 
