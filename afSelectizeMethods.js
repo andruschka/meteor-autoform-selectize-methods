@@ -15,6 +15,12 @@ Template.afSelectizeMethods.onCreated(function() {
       return this.initialOption.get().value
     }
   }
+  this.atts = function(){
+    let atts = _.clone(this.data.atts)
+    delete atts.fetchMethods
+    delete atts.inputPlaceholder
+    return atts
+  }
 })
 
 Template.afSelectizeMethods.onRendered(function() {
@@ -55,6 +61,11 @@ Template.afSelectizeMethods.onRendered(function() {
     initSelectize(atts.selectizeOptions)
   }
 })
+
+Template.afSelectize.onDestroyed(function (){
+  this.$('select')[0].selectize.destroy()
+})
+
 
 Template.afSelectizeMethods.helpers({
   "instance": ()=> Template.instance()
