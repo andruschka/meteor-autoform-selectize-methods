@@ -63,7 +63,10 @@ Template.afSelectizeMethods.onRendered(function() {
 })
 
 Template.afSelectizeMethods.onDestroyed(function (){
-  this.$('select')[0].selectize.destroy()
+  var $elem = this.$('select')[0]
+  if ($elem) {
+    $elem.selectize.destroy()
+  }
 })
 
 
