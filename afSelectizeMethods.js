@@ -64,7 +64,7 @@ Template.afSelectizeMethods.onRendered(function() {
 
 Template.afSelectizeMethods.onDestroyed(function (){
   var $elem = this.$('select')[0]
-  if ($elem) {
+  if ($elem && $elem.selectize) {
     $elem.selectize.destroy()
   }
 })
